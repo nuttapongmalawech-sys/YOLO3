@@ -9,8 +9,8 @@ st.title("YOLO Image Detection App :)")
 
 # Load YOLO model
 #model = YOLO("yolov8n (1).pt")
-#model = YOLO("yolo11n (3).pt")
-model = YOLO("best.pt")
+model = YOLO("yolo11n (3).pt")
+#model = YOLO("best.pt")
 # Upload image
 uploaded_image = st.file_uploader("Upload an image (jpg, png)", type=["jpg", "jpeg", "png"])
 
