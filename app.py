@@ -31,10 +31,12 @@ if uploaded_image is not None:
   class_ids = boxes.cls.cpu().numpy().astype(int)
   class_names = [model.names[i] for i in class_ids]
   # Count animals
-  Tiger_count = class_names.count("Tiger")
-  st.write(f"Number of Tiger detected: **{Tiger_count}**")
-  Fox_count = class_names.count("Fox")
-  st.write(f"Number of Fox detected: **{Fox_count}**")
-  Lion_count = class_names.count("Lion")
-  st.write(f"Number of Lion detected: **{Lion_count}**")
+  animal_count = class_names.count("animal")
+  st.write(f"Number of animal detected: **{animal_count}**")
+  # Tiger_count = class_names.count("Tiger")
+  # st.write(f"Number of Tiger detected: **{Tiger_count}**")
+  # Fox_count = class_names.count("Fox")
+  # st.write(f"Number of Fox detected: **{Fox_count}**")
+  # Lion_count = class_names.count("Lion")
+  # st.write(f"Number of Lion detected: **{Lion_count}**")
   
